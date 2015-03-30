@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Isogame</title>
+    <script type="text/javascript" src="Helper.js"></script>
+    <script type="text/javascript" src="GameObject.js"></script>
+    <script type="text/javascript" src="Map.js"></script>
+    <script type="text/javascript">
+
+
+		function init() {
+			var canvas = document.getElementById('map');
+			var map = new Map(canvas, 'level.json');
+		}
+    </script>
+    <style type="text/css">
+      canvas { border: 1px solid black; }
+      div#preload { display: none; }
+    </style>
+  </head>
+  <body onload="init();">
+	<canvas id="map" width="600" height="600"></canvas>
+    <div id="preload">
+       <img src="data/img/ground_grass.png" width="1" height="1" />
+       <img src="data/img/ground_street.png" width="1" height="1" />
+	   <img src="data/img/move_tank_e.png" width="1" height="1" />
+	   <img src="data/img/move_tank_n.png" width="1" height="1" />
+	   <img src="data/img/move_tank_w.png" width="1" height="1" />
+	   <img src="data/img/move_tank_s.png" width="1" height="1" />
+    </div>
+  </body>
+</html>
