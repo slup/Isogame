@@ -4,10 +4,10 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Isogame</title>
-    <script type="text/javascript" src="Helper.js"></script>
-    <script type="text/javascript" src="GameObject.js"></script>
-    <script type="text/javascript" src="Map.js"></script>
-    <script type="text/javascript">
+    <script src="Helper.js"></script>
+    <script src="GameObject.js"></script>
+    <script src="Map.js"></script>
+    <script>
 
 
 		function init() {
@@ -15,7 +15,7 @@
 			var map = new Map(canvas, 'level.json');
 		}
     </script>
-    <style type="text/css">
+    <style>
       canvas { border: 1px solid black; }
       div#preload { display: none; }
     </style>
@@ -23,12 +23,12 @@
   <body onload="init();">
 	<canvas id="map" width="600" height="600"></canvas>
     <div id="preload">
-       <img src="data/img/ground_grass.png" width="1" height="1" />
-       <img src="data/img/ground_street.png" width="1" height="1" />
-	   <img src="data/img/move_tank_e.png" width="1" height="1" />
-	   <img src="data/img/move_tank_n.png" width="1" height="1" />
-	   <img src="data/img/move_tank_w.png" width="1" height="1" />
-	   <img src="data/img/move_tank_s.png" width="1" height="1" />
+       <img src="data/img/ground_grass.png" width="1" height="1" alt="preloading content" />
+       <img src="data/img/ground_street.png" width="1" height="1" alt="preloading content" />
+	   <img src="data/img/move_tank_e.png" width="1" height="1" alt="preloading content" />
+	   <img src="data/img/move_tank_n.png" width="1" height="1" alt="preloading content" />
+	   <img src="data/img/move_tank_w.png" width="1" height="1" alt="preloading content" />
+	   <img src="data/img/move_tank_s.png" width="1" height="1" alt="preloading content" />
     </div>
   </body>
 </html>
