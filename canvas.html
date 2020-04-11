@@ -1,34 +1,28 @@
 <!doctype html>
 <html lang="de">
   <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="Content-Security-Policy: default-src 'self'">
     <title>Isogame</title>
-    <script src="Helper.js"></script>
-    <script src="GameObject.js"></script>
-    <script src="Map.js"></script>
-    <script>
-
-
-		function init() {
-			var canvas = document.getElementById('map');
-			var map = new Map(canvas, 'level.json');
-		}
-    </script>
+    <script src="Helper.js" />
+    <script src="GameObject.js" />
+    <script src="Map.js" />
+    <script src="Main.js" />
     <style>
       canvas { border: 1px solid black; }
       div#preload { display: none; }
     </style>
   </head>
   <body onload="init();">
-	<canvas id="map" width="600" height="600"></canvas>
+    <canvas id="map" width="600" height="600"></canvas>
     <div id="preload">
-       <img src="data/img/ground_grass.png" width="1" height="1" alt="preloading content" />
-       <img src="data/img/ground_street.png" width="1" height="1" alt="preloading content" />
-	   <img src="data/img/move_tank_e.png" width="1" height="1" alt="preloading content" />
-	   <img src="data/img/move_tank_n.png" width="1" height="1" alt="preloading content" />
-	   <img src="data/img/move_tank_w.png" width="1" height="1" alt="preloading content" />
-	   <img src="data/img/move_tank_s.png" width="1" height="1" alt="preloading content" />
+        <img src="data/img/ground_grass.png" width="1" height="1" alt="preloading content" />
+        <img src="data/img/ground_street.png" width="1" height="1" alt="preloading content" />
+        <img src="data/img/move_tank_e.png" width="1" height="1" alt="preloading content" />
+        <img src="data/img/move_tank_n.png" width="1" height="1" alt="preloading content" />
+        <img src="data/img/move_tank_w.png" width="1" height="1" alt="preloading content" />
+        <img src="data/img/move_tank_s.png" width="1" height="1" alt="preloading content" />
     </div>
   </body>
 </html>
