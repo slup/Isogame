@@ -3,4 +3,4 @@ function init() {
     var map = new Map(canvas, 'level.json');
 }
 
-init();
+document.body.addEventListener("load", init);
