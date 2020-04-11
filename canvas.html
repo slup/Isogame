@@ -3,15 +3,12 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
     <title>Isogame</title>
     <script src="Helper.js"></script>
     <script src="GameObject.js"></script>
     <script src="Map.js"></script>
-    <style>
-      canvas { border: 1px solid black; }
-      div#preload { display: none; }
-    </style>
+    <style src="style.css"></style>
   </head>
   <body onload="init();">
     <canvas id="map" width="600" height="600"></canvas>
